@@ -19,7 +19,7 @@
          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          setLayout(new GridLayout(4, 2));
 
-         problemLabel = new JLabel("Select a problem:");
+         problemLabel = new JLabel("Select a Problem:");
          resultLabel = new JLabel();
 
          inputField1 = new JTextField();
