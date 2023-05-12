@@ -35,6 +35,7 @@
                 double velocity = distance / time;
                 resultLabel.setText("Velocity: " + velocity);
             }
+          
         };                                      
 forceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
