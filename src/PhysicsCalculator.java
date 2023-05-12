@@ -24,6 +24,15 @@ public class PhysicsCalculator extends JFrame {
 
         inputField1 = new JTextField();
         inputField2 = new JTextField();
+        
+        velocityButton = new JButton("Calculate Velocity");
+        forceButton = new JButton("Calculate Force");
 
-
-   
+        velocityButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double distance = Double.parseDouble(inputField1.getText());
+                double time = Double.parseDouble(inputField2.getText());
+                double velocity = distance / time;
+                resultLabel.setText("Velocity: " + velocity);
+            }
+        });
