@@ -36,3 +36,11 @@
                 resultLabel.setText("Velocity: " + velocity);
             }
         };
+forceButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double mass = Double.parseDouble(inputField1.getText());
+                double acceleration = Double.parseDouble(inputField2.getText());
+                double force = mass * acceleration;
+                resultLabel.setText("Force: " + force);
+            }
+        });
