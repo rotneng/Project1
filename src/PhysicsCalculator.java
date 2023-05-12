@@ -44,3 +44,24 @@ forceButton.addActionListener(new ActionListener() {
                 resultLabel.setText("Force: " + force);
             }
         });
+add(problemLabel);
+        add(new JLabel());
+        add(new JLabel("Input 1:"));
+        add(inputField1);
+        add(new JLabel("Input 2:"));
+        add(inputField2);
+        add(velocityButton);
+        add(forceButton);
+        add(resultLabel);
+
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new PhysicsCalculator();
+            }
+        });
+    }
+}
