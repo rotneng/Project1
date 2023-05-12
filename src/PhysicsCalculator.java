@@ -36,6 +36,7 @@
                 resultLabel.setText("Velocity: " + velocity);
             }
         };
+                                          
 forceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 double mass = Double.parseDouble(inputField1.getText());
@@ -44,6 +45,7 @@ forceButton.addActionListener(new ActionListener() {
                 resultLabel.setText("Force: " + force);
             }
         });
+                                          
 add(problemLabel);
         add(new JLabel());
         add(new JLabel("Input 1:"));
