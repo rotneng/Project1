@@ -44,6 +44,7 @@ forceButton.addActionListener(new ActionListener() {
                 double force = mass * acceleration;
                 resultLabel.setText("Force: " + force);
             }
+ 
         });
                                           
 add(problemLabel);
