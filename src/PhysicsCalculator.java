@@ -64,7 +64,6 @@ add(problemLabel);
             public void run() {
                 new PhysicsCalculator();
             }
-         
         });
     }
 }
